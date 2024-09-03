@@ -79,6 +79,16 @@ onMounted(()=>{
          class="absolute z-50 p-3 m-4 bg-white bg-opacity-50 rouned-full cursor-pointer">
           <ChevronLeft fillColor="#FFFFFF" :size="40" />
         </div>
+
+        <video 
+          v-if="movie"
+          :src="'videos/'+movie.name+'.mp4'"
+          autoplay
+          loop
+          :key="movie.name"
+          controls
+          class="absolute z-0 h-[400px] right-0 top-0" 
+          />
       </div>
   </div>
   <RouterView />
