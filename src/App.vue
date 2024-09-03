@@ -23,6 +23,21 @@ const {movie, showFullVideo} = storeToRefs(useMovie)
         <div class="py-2 mx-10 my-6">
           <Magnify fillColor="#FFFFFF" :size="40" class="cursor-pointer" />
         </div>
+        <div class="py-2 mx-10 my-6 border-b-4 border-b-red-500">
+          <HomeOutline fillColor="#FFFFFF" :size="40" class="cursor-pointer" />
+        </div>
+        <div class="py-2 mx-10 my-6">
+          <TrendingUp fillColor="#FFFFFF" :size="40" class="cursor-pointer" />
+        </div>
+        <div class="py-2 mx-10 my-6">
+          <Television fillColor="#FFFFFF" :size="40" class="cursor-pointer" />
+        </div>
+        <div class="py-2 mx-10 my-6">
+          <MovieOutline fillColor="#FFFFFF" :size="40" class="cursor-pointer" />
+        </div>
+        <div class="py-2 mx-10 my-6">
+          <Plus fillColor="#FFFFFF" :size="40" class="cursor-pointer" />
+        </div>
       </div>
     </div>
   </div>
