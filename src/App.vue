@@ -61,7 +61,7 @@ onMounted(()=>{
           autoplay
           loop
           :key="movie.name"
-          class="absolute z-0 h-[600px] right-0 top-0" 
+          class="absolute z-0 h-[400px] right-0 top-0" 
           />
         </div>
 

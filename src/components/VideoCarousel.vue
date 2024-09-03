@@ -28,7 +28,7 @@
     }
 </script>   
 <template>
-    <div class="relative w-full min-w-[1000px]">
+    <div class="relative w-full min-w-[1400px]">
         <div class="flex justify-between mr-6">
             <div class="flex items-center font-semibold text-white text-lg cursor-pointer">{{ category }}</div>
         </div>
@@ -46,7 +46,19 @@
         <Slide
         v-for="slide, index in movies"
         :key="slide"
-        class="flex items-center object-cover text-white bg-transparent">{{ slide }}</Slide>
+        class="flex items-center object-cover text-white bg-transparent">
+        <div 
+        @click="$event=> fullScreenVideo(index)"
+        class="object-cover cursor-pointer hover:brightness-125 h-[100%]"
+        :class="currentSlide !== index ? 'border-4 border-transparent' : 'border-4 border-white',
+         currentSlideObject(slide, index)">
+            <img 
+            style="user-select:none"
+            class="pointer-events-none h-[100%] z-[-1]"
+            :src="'/images/'+slide.name+'.png'"
+            alt="">
+        </div>
+    </Slide>
     </Carousel>
     </div>
 </template>
