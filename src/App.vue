@@ -18,7 +18,12 @@ const {movie, showFullVideo} = storeToRefs(useMovie)
 <template>
   <div class="bg-black fixed w-full h-screen">
     <div v-if="!showFullVideo" id="SideNav" class="flex z-40 items-center h-screen bg-black relative w-[120px]">
-
+      N
+      <div>
+        <div class="py-2 mx-10 my-6">
+          <Magnify fillColor="#FFFFFF" :size="40" class="cursor-pointer" />
+        </div>
+      </div>
     </div>
   </div>
   <RouterView />
