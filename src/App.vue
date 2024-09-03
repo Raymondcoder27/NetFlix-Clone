@@ -63,8 +63,11 @@ onMounted(()=>{
           class="absolute z-0 h-[600px] right-0 top-0" 
           />
         </div>
-      </div>
 
+        <div class="fixed z-30 bottom-0 right-0 w-full overflow-y-auto h-[55%] pl-[120px]">
+          <VideoCarousel class="pb-14 pt-14" category="Popular Movies" :movies="movies[0]" />
+        </div>
+      </div>
   </div>
   <RouterView />
 
