@@ -10,11 +10,14 @@
       {{movie.name}}
     </div>
     <div class="flex items-center text-lg pt-4">
+     <div>
       {{ movie.year }}
-    </div>
+     </div>
     <div class="relative">
       <span class="absolute text-[40px] left-[2px] -top-[12px]">.</span>
       <span class="pl-4">{{movie.genre.one}}</span>
     </div>
+  </div>
+
   </div>
 </template>
