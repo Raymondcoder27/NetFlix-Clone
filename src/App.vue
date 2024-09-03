@@ -10,6 +10,8 @@ import MovieOutline from 'vue-material-design-icons/MovieOutline.vue'
 import Plus from 'vue-material-design-icons/Plus.vue'
 import ChevronLeft from 'vue-material-design-icons/ChevronLeft.vue'
 
+import MovieDetails from '@/components/MovieDetails.vue'
+
 import {useMovieStore} from '@/stores/movie'
 import { storeToRefs } from 'pinia'
 const useMovie = useMovieStore()
@@ -49,6 +51,9 @@ onMounted(()=>{
 
       <div v-if="!showFullVideo">
         <div class="fixed flex z-20 w-full top-0 right-0 bg-black bg-clip-border pl-[120px] h-[50%]">
+
+          <MovieDetails v-if="movie" :movie="movie" />
+
           <video 
           v-if="movie"
           :src="'videos/'+movie.name+'.mp4'"
