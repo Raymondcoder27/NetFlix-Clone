@@ -32,6 +32,22 @@
         <div class="flex justify-between mr-6">
             <div class="flex items-center font-semibold text-white text-lg cursor-pointer">{{ category }}</div>
         </div>
+
+        <Carousel 
+        ref="carousel"
+        v-model="currentSlide"
+        :items-to-show="8"
+        :items-to-scroll="1"
+        :wrap-around="true"
+        :transition="500"
+        snapAlign="start"
+        class="bg-transparent"
+        >
+        <Slide
+        v-for="slide, index in movies"
+        :key="slide"
+        class="flex items-center object-cover text-white bg-transparent">{{ slide }}</Slide>
+    </Carousel>
     </div>
 </template>
 
