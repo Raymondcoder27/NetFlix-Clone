@@ -1,6 +1,6 @@
 <script setup>
-  const props = definProps({
-    movie
+  const props = defineProps({
+    movie: Object
   })
 </script>
 
@@ -13,8 +13,8 @@
       {{ movie.year }}
     </div>
     <div class="relative">
-      <div class="absolute text-[40px] left-[2px] -top-[12px]">.</div>
-      <div class="pl-4">{{movie.genre.one}}</div>
+      <span class="absolute text-[40px] left-[2px] -top-[12px]">.</span>
+      <span class="pl-4">{{movie.genre.one}}</span>
     </div>
   </div>
 </template>
