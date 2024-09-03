@@ -59,6 +59,9 @@
             alt="">
         </div>
     </Slide>
+    <template #addons>
+        <Navigation />
+    </template>
     </Carousel>
     </div>
 </template>
