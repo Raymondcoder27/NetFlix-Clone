@@ -46,6 +46,17 @@ onMounted(()=>{
         </div>
       </div>
     </div>
+      <div v-if="!showFullVideo">
+        <div class="fixed flex z-20 w-full top-0 right-0 bg-black bg-clip-border pl-[120px] h-[50%]">
+          <video 
+          v-if="movie"
+          :src="'videos/'+movie.name+'.mp4'"
+          autoplay
+          loop
+          class="absolute z-0 h-600px right-0 top-0" />
+        </div>
+      </div>
+
   </div>
   <RouterView />
 
