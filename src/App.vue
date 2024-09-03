@@ -87,7 +87,7 @@ onMounted(()=>{
           loop
           :key="movie.name"
           controls
-          class="absolute z-0 h-[400px] right-0 top-0" 
+          class="absolute z-0 h-full w-[100vw] object-fit" 
           />
       </div>
   </div>
