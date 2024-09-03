@@ -53,7 +53,7 @@ onMounted(()=>{
       <div v-if="!showFullVideo">
         <div class="fixed flex z-20 w-full top-0 right-0 bg-black bg-clip-border pl-[120px] h-[50%]">
  
-          <div class="absolute z-30 h-[600px] left-[120px] right-0 top-0 w-[77%] bg-gradient-to-r from-black via-black"></div>
+          <div class="absolute z-10 h-[600px] left-[120px] right-0 top-0 w-[77%] bg-gradient-to-r from-black via-black"/>
           <MovieDetails v-if="movie" :movie="movie" /> 
 
           <video 
@@ -71,6 +71,9 @@ onMounted(()=>{
           <VideoCarousel class="pb-14" category="Horror Movies" :movies="movies[1]" />
           <VideoCarousel class="pb-32" category="Featured Movies" :movies="movies[2]" />
         </div>
+      </div>
+      <div class="absolute z-20 right-0 bottom-0 bg-gradient-to-t w-[100%] h-[70%] left-[120px] from-black via-black">
+
       </div>
   </div>
   <RouterView />
