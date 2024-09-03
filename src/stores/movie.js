@@ -2,11 +2,8 @@ import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 
 export const useMovieStore = defineStore('movie', () => {
-  const count = ref(0)
-  const doubleCount = computed(() => count.value * 2)
-  function increment() {
-    count.value++
-  }
+  const movie = ref(null)
+  const showFullVideo = ref(false)
 
-  return { count, doubleCount, increment }
+  return { movie, showFullVideo }
 })
