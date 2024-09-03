@@ -77,7 +77,7 @@ onMounted(()=>{
         <div
         @click="$event => showFullVideo = false"
          class="absolute z-50 p-3 m-4 bg-white bg-opacity-50 rouned-full cursor-pointer">
-
+          <ChevronLeft fillColor="#FFFFFF" :size="40" />
         </div>
       </div>
   </div>
