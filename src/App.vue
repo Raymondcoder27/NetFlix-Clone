@@ -52,8 +52,9 @@ onMounted(()=>{
 
       <div v-if="!showFullVideo">
         <div class="fixed flex z-20 w-full top-0 right-0 bg-black bg-clip-border pl-[120px] h-[50%]">
-
-          <MovieDetails v-if="movie" :movie="movie" />
+ 
+          <div class="absolute z-30 h-[600px] left-[120px] right-0 top-0 w-[77%] bg-gradient-to-r from-black via-black"></div>
+          <MovieDetails v-if="movie" :movie="movie" /> 
 
           <video 
           v-if="movie"
