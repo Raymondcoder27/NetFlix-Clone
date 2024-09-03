@@ -28,7 +28,7 @@
     }
 </script>   
 <template>
-    <div class="relative min-w-[1200px]">
+    <div class="relative w-full min-w-[1000px]">
         <div class="flex justify-between mr-6">
             <div class="flex items-center font-semibold text-white text-lg cursor-pointer">{{ category }}</div>
         </div>
