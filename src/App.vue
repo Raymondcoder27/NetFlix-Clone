@@ -8,7 +8,7 @@ import MovieOutline from 'vue-material-design-icons/MovieOutline.vue'
 import Plus from 'vue-material-design-icons/Plus.vue'
 import ChevronLeft from 'vue-material-design-icons/ChevronLeft.vue'
 
-import {useMovieStore} from '@/stores/counter'
+import {useMovieStore} from '@/stores/movie'
 import { storeToRefs } from 'pinia'
 const useMovie = useMovieStore()
 const {movie, showFullVideo} = storeToRefs(useMovie)
@@ -16,15 +16,11 @@ const {movie, showFullVideo} = storeToRefs(useMovie)
 </script>
 
 <template>
-  <header class="">
-    <div class="flex">
-      <nav class="flex mx-auto justify-center">
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink class="ml-3" to="/about">About</RouterLink>
-      </nav>
-    </div>
+  <div class="bg-black fixed w-full h-screen">
+    <div v-if="!showFullVideo" id="SideNav" class="flex z-40 items-center h-screen bg-black relative w-[120px]">
 
-  </header>
+    </div>
+  </div>
   <RouterView />
 
 
