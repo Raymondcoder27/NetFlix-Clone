@@ -76,7 +76,7 @@ onMounted(()=>{
       <div v-if="showFullVideo">
         <div
         @click="$event => showFullVideo = false"
-         class="absolute z-50 p-3 m-4 bg-white bg-opacity-50 rouned-full cursor-pointer">
+         class="absolute z-50 p-1 m-4 bg-white rounded-full bg-opacity-50 rouned-full cursor-pointer">
           <ChevronLeft fillColor="#FFFFFF" :size="40" />
         </div>
 
