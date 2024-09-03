@@ -5,7 +5,7 @@
 <template>
   <main>
     <!-- <TheWelcome /> -->
-     <div class="font-bold text-black font-mono text-underline bg-red-300">
+     <div class="font-bold text-black font-mono text-underline bg-red-300 flex justify-center">
       Hello World
      </div>
   </main>
