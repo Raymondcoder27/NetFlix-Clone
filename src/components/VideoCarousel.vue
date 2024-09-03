@@ -7,7 +7,7 @@
     import { storeToRefs } from 'pinia';
 
     const useMovie = useMovieStore()
-    const {movie, showFullMovie} = storeToRefs(useMovie)
+    const {movie, showFullVideo} = storeToRefs(useMovie)
 
     let currentSlide = ref(0)
     const props = defineProps({
@@ -21,9 +21,18 @@
             movie.value = slide
         }
     }
+
+    const fullScreenVideo = (index) => {
+        currentSlide.value = index
+        setTimeout(() => showFullVideo.value = true, 500);
+    }
 </script>   
 <template>
-    
+    <div class="relative min-w-[1200px]">
+        <div class="flex justify-between mr-6">
+            <div class="flex items-center font-semibold text-white text-2xl cursor-pointer">{{ category }}</div>
+        </div>
+    </div>
 </template>
 
 <style>
