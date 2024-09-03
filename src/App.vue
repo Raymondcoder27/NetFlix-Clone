@@ -72,8 +72,13 @@ onMounted(()=>{
           <VideoCarousel class="pb-32" category="Featured Movies" :movies="movies[2]" />
         </div>
       </div>
-      <div class="absolute z-20 right-0 bottom-0 bg-gradient-to-t w-[100%] h-[70%] left-[120px] from-black via-black">
+      <div class="absolute z-20 right-0 bottom-0 bg-gradient-to-t w-[100%] h-[70%] left-[120px] from-black via-black" />
+      <div v-if="showFullVideo">
+        <div
+        @click="$event => showFullVideo = false"
+         class="absolute z-50 p-3 m-4 bg-white bg-opacity-50 rouned-full cursor-pointer">
 
+        </div>
       </div>
   </div>
   <RouterView />
