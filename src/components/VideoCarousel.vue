@@ -30,7 +30,7 @@
 <template>
     <div class="relative min-w-[1200px]">
         <div class="flex justify-between mr-6">
-            <div class="flex items-center font-semibold text-white text-2xl cursor-pointer">{{ category }}</div>
+            <div class="flex items-center font-semibold text-white text-lg cursor-pointer">{{ category }}</div>
         </div>
     </div>
 </template>

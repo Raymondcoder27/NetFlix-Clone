@@ -15,17 +15,17 @@
      </div>
     <div class="relative">
       <span class="absolute text-[40px] left-[2px] -top-[12px]">.</span>
-      <span class="pl-4">{{movie.genre.one}}</span>
+      <span class="pl-4 text-md">{{movie.genre.one}}</span>
     </div>
     <div class="relative">
       <span class="absolute text-[40px] left-[2px] -top-[12px]">.</span>
-      <span class="pl-4">{{movie.genre.two}}</span>
+      <span class="pl-4 text-md">{{movie.genre.two}}</span>
     </div>
     <div class="relative">
       <span class="absolute text-[40px] left-[2px] -top-[12px]">.</span>
-      <span class="pl-4">{{movie.genre.three}}</span>
+      <span class="pl-4 text-md">{{movie.genre.three}}</span>
     </div>
   </div>
-  <div class="text-2xl pt-6">{{ movie.description }}</div>
+  <div class="text-md pt-6">{{ movie.description }}</div>
   </div>
 </template>
