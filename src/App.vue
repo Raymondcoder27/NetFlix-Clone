@@ -56,6 +56,7 @@ onMounted(()=>{
           <div class="absolute z-10 h-[600px] left-[120px] right-0 top-0 w-[77%] bg-gradient-to-r from-black via-black"/>
           <MovieDetails v-if="movie" :movie="movie" /> 
 
+          
           <video 
           v-if="movie"
           :src="'videos/'+movie.name+'.mp4'"
